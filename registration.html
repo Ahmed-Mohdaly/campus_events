@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events Guide - Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="dark-toggle" class="dark-checkbox">
+
+  <header>
+    <div class="header-container">
+      <span class="site-title">Campus Events Guide</span>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="event-details.html">Event Details</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+      <label for="dark-toggle" class="dark-label">Dark Mode</label>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1>Register for: Zewail AI & Tech Summit</h1>
+      <p><strong>Event Date:</strong> 2026-11-15 | <strong>Venue:</strong> Helmy Institute Hall</p>
+
+      <form action="#" method="post">
+        <!-- 1. Text input with pattern & maxlength -->
+        <div class="form-group">
+          <label for="full-name">Attendee Full Name:</label>
+          <input type="text" id="full-name" name="full_name" required maxlength="50" pattern="[A-Za-z\s]{3,50}" placeholder="e.g. Ahmed Ayman">
+        </div>
+
+        <!-- 2. Email input -->
+        <div class="form-group">
+          <label for="email">University Email:</label>
+          <input type="email" id="email" name="email" required placeholder="student@zewailcity.edu.eg">
+        </div>
+
+        <!-- 3. URL input -->
+        <div class="form-group">
+          <label for="portfolio">GitHub or LinkedIn URL:</label>
+          <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/username">
+        </div>
+
+        <!-- 4. Number input -->
+        <div class="form-group">
+          <label for="tickets">Number of Seats (1 to 3):</label>
+          <input type="number" id="tickets" name="tickets" min="1" max="3" value="1" required>
+        </div>
+
+        <!-- 5. Range input -->
+        <div class="form-group">
+          <label for="exp-level">AI Familiarity Level (1 = Beginner, 10 = Advanced):</label>
+          <input type="range" id="exp-level" name="exp_level" min="1" max="10" value="5">
+        </div>
+
+        <!-- 6. Date input -->
+        <div class="form-group">
+          <label for="att-date">Preferred Attendance Date:</label>
+          <input type="date" id="att-date" name="att_date" value="2026-11-15" required>
+        </div>
+
+        <!-- 7. Time input -->
+        <div class="form-group">
+          <label for="arrival-time">Expected Arrival Time:</label>
+          <input type="time" id="arrival-time" name="arrival_time" value="10:00" required>
+        </div>
+
+        <!-- 8. Color input -->
+        <div class="form-group">
+          <label for="badge-color">Preferred Name Badge Color:</label>
+          <input type="color" id="badge-color" name="badge_color" value="#1d4ed8">
+        </div>
+
+        <!-- 9. File input -->
+        <div class="form-group">
+          <label for="student-id">Upload Student ID Card:</label>
+          <input type="file" id="student-id" name="student_id" required>
+        </div>
+
+        <!-- 10. Select dropdown -->
+        <div class="form-group">
+          <label for="track-select">Select Session Track:</label>
+          <select id="track-select" name="track" required>
+            <option value="">-- Choose a track --</option>
+            <option value="ai">Machine Learning & AI</option>
+            <option value="web">Web & UI Development</option>
+            <option value="data">Big Data Engineering</option>
+          </select>
+        </div>
+
+        <!-- 11. Radio buttons -->
+        <div class="form-group">
+          <p class="group-label">Attendee Role:</p>
+          <label class="inline-label">
+            <input type="radio" name="role" value="student" checked> Undergraduate Student
+          </label>
+          <label class="inline-label">
+            <input type="radio" name="role" value="guest"> External Guest
+          </label>
+        </div>
+
+        <!-- 12. Checkboxes -->
+        <div class="form-group">
+          <p class="group-label">Extra Requirements:</p>
+          <label class="inline-label">
+            <input type="checkbox" name="cert" value="yes"> Request Attendance Certificate
+          </label>
+          <label class="inline-label">
+            <input type="checkbox" name="access" value="yes"> Special Accessibility Needs
+          </label>
+        </div>
+
+        <!-- 13. Textarea -->
+        <div class="form-group">
+          <label for="notes">Questions or Access Needs:</label>
+          <textarea id="notes" name="notes" rows="4" maxlength="250" placeholder="Write any notes or questions here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Complete Registration</button>
+      </form>
+    </section>
+
+    <section class="contact-box">
+      <h2>Event Contact Information</h2>
+      <p><strong>Organizer:</strong> Student Activities Office - Zewail City</p>
+      <p><strong>Contact Email:</strong> events@zewailcity.edu.eg</p>
+      <p><strong>Phone:</strong> +20 100 000 0000</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Campus Events Guide - Zewail City</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>

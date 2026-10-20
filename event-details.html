@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Events Guide - Event Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="dark-toggle" class="dark-checkbox">
+
+  <header>
+    <div class="header-container">
+      <span class="site-title">Campus Events Guide</span>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="event-details.html">Event Details</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="registration.html">Registration</a></li>
+        </ul>
+      </nav>
+      <label for="dark-toggle" class="dark-label">Dark Mode</label>
+    </div>
+  </header>
+
+  <main>
+    <article class="details-box">
+      <h1>Zewail AI & Tech Summit</h1>
+      <img src="assets/event1.jpg" alt="Banner for Zewail AI and Tech Summit" class="detail-img">
+
+      <section>
+        <h2>About the Event</h2>
+        <p>Join students, researchers, and developers at the Zewail AI & Tech Summit to explore software engineering trends, machine learning applications, and hands-on coding sessions.</p>
+        <p><strong>Date:</strong> 2026-11-15</p>
+        <p><strong>Time:</strong> 10:00 AM - 03:00 PM</p>
+        <p><strong>Venue:</strong> Helmy Institute Hall</p>
+        <p><strong>Entry & Tickets:</strong> Free entry for university students (Student ID is required at the gate).</p>
+        <a href="registration.html" class="btn">Register Now</a>
+      </section>
+
+      <section>
+        <h2>Event Agenda</h2>
+        <ul class="agenda-list">
+          <li><strong>10:00 AM:</strong> Opening Keynote & Welcome Note</li>
+          <li><strong>11:30 AM:</strong> Panel Discussion: AI in Real-World Software</li>
+          <li><strong>01:00 PM:</strong> Networking Break & Poster Session</li>
+          <li><strong>02:00 PM:</strong> Closing Remarks & Certificates</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Event Promo Video</h2>
+        <video controls class="media-player">
+          <source src="assets/promo.mp4" type="video/mp4">
+          Your browser does not support the HTML5 video tag.
+        </video>
+      </section>
+    </article>
+
+    <section class="form-section">
+      <h2>Submit an Event Review</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="reviewer-name">Your Name:</label>
+          <input type="text" id="reviewer-name" name="reviewer_name" required maxlength="40" placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="review-photo">Upload Event Photo or Screenshot:</label>
+          <input type="file" id="review-photo" name="review_photo" accept="image/*" required>
+        </div>
+
+        <div class="form-group">
+          <label for="review-comment">Your Review:</label>
+          <textarea id="review-comment" name="review_comment" rows="4" required maxlength="300" placeholder="Share your feedback..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Campus Events Guide - Zewail City</p>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank">Facebook</a> |
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
